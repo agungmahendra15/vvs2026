@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Nilai Penyisihan VVS 2026</title>
+  <style>
+    :root {
+      --bg: #08111f;
+      --card: rgba(255, 255, 255, 0.08);
+      --card-hover: rgba(255, 255, 255, 0.13);
+      --border: rgba(255, 255, 255, 0.14);
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --accent-2: #818cf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      min-height: 100%;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.18), transparent 36%),
+        linear-gradient(145deg, #07101d 0%, #0f172a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    main {
+      width: min(100%, 460px);
+    }
+
+    h1 {
+      margin: 0 0 22px;
+      text-align: center;
+      font-size: clamp(24px, 7vw, 34px);
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+    }
+
+    .menu {
+      display: grid;
+      gap: 14px;
+    }
+
+    button,
+    a {
+      width: 100%;
+      min-height: 62px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      color: var(--text);
+      background: var(--card);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      font: inherit;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.1px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 0 20px;
+      cursor: pointer;
+      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    button:active,
+    a:active {
+      transform: scale(0.98);
+    }
+
+    button:hover,
+    a:hover {
+      background: var(--card-hover);
+      border-color: rgba(255, 255, 255, 0.24);
+    }
+
+    .arrow {
+      color: var(--accent);
+      font-size: 20px;
+      transition: transform 0.22s ease;
+    }
+
+    .group.open .arrow {
+      transform: rotate(90deg);
+    }
+
+    .submenu {
+      display: grid;
+      gap: 10px;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-6px);
+      transition: max-height 0.3s ease, opacity 0.22s ease, transform 0.22s ease, margin-top 0.22s ease;
+      margin-top: 0;
+    }
+
+    .group.open .submenu {
+      max-height: 420px;
+      opacity: 1;
+      transform: translateY(0);
+      margin-top: 10px;
+    }
+
+    .submenu a,
+    .submenu button {
+      min-height: 54px;
+      border-radius: 15px;
+      font-size: 15px;
+      font-weight: 650;
+      background: rgba(255, 255, 255, 0.055);
+      color: var(--muted);
+      padding-left: 24px;
+    }
+
+    .submenu a::after,
+    .submenu button::after {
+      content: "↗";
+      color: var(--accent-2);
+      font-size: 17px;
+    }
+
+    .nested .submenu {
+      padding-left: 10px;
+    }
+
+    @media (max-width: 380px) {
+      button,
+      a {
+        min-height: 58px;
+        font-size: 16px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Nilai Penyisihan VVS 2026</h1>
+    <div class="menu">
+      <div class="group">
+        <button type="button" class="toggle">
+          <span>Baca Paritta</span>
+          <span class="arrow">›</span>
+        </button>
+        <div class="submenu">
+          <a href="https://docs.google.com/spreadsheets/d/1wdeSYdu97f3ASvWQEdEXU-LXRp42Hmlu7H5eXu-xCGE/edit?gid=801883691#gid=801883691" target="_blank" rel="noopener">SD</a>
+          <a href="https://docs.google.com/spreadsheets/d/1RT2K93BkbvS-dQ96RMy7g5-1IkQbYz8MYJl4jU46BR0/edit?gid=680340156#gid=680340156" target="_blank" rel="noopener">SMP</a>
+          <a href="https://docs.google.com/spreadsheets/d/1LxnybbkJbVnrTrKzyQqIhAJHY81KhvOlPCIEA9_PXdw/edit?gid=1792651950#gid=1792651950" target="_blank" rel="noopener">SMA/SMK/Umum</a>
+        </div>
+      </div>
+
+      <div class="group">
+        <button type="button" class="toggle">
+          <span>Dhammapada</span>
+          <span class="arrow">›</span>
+        </button>
+        <div class="submenu">
+          <a href="https://docs.google.com/spreadsheets/d/11__xFSVrMV5Iz_jwbsTcsH4A4TeFORi9TmGB5HKd8ZY/edit?gid=759553405#gid=759553405" target="_blank" rel="noopener">SD</a>
+          <a href="https://docs.google.com/spreadsheets/d/1-5aKE274vQuz2hRLadELdsnT6aBQvEthxdF9j043ttk/edit?gid=780879549#gid=780879549" target="_blank" rel="noopener">SMP</a>
+          <a href="https://docs.google.com/spreadsheets/d/1MKgfw7rTjL09wIoLRHL2bu1sq1bKmN6MoRK6Z7caLp4/edit?gid=418314880#gid=418314880" target="_blank" rel="noopener">SMA/SMK/Umum</a>
+        </div>
+      </div>
+
+      <a href="https://docs.google.com/spreadsheets/d/1Ao_dPjzWcEnjMnAeScQUhvc8us5L5zRazGbN9pbJup8/edit?usp=drive_web&ouid=112630606072721429169" target="_blank" rel="noopener">
+        <span>Dhammadesana</span>
+        <span class="arrow">↗</span>
+      </a>
+
+      <div class="group">
+        <button type="button" class="toggle">
+          <span>Bercerita Bahasa Mandarin</span>
+          <span class="arrow">›</span>
+        </button>
+        <div class="submenu">
+          <a href="https://docs.google.com/spreadsheets/d/1rsOOUYfvGMKBbLN9JPkVUFNN2OpKp3PNoNSgjPCWacc/edit?gid=661716715#gid=661716715" target="_blank" rel="noopener">SD</a>
+          <a href="https://docs.google.com/spreadsheets/d/1mCorYYNi6WpOngrSso6aQLglL04qUBn4To-lMkyrPCU/edit" target="_blank" rel="noopener">SMP</a>
+          <a href="https://docs.google.com/spreadsheets/d/1ZaFNcY93JryMhJuO25H_jLevRr3fLWRsMEXuFYYcU-U/edit?gid=1171027569#gid=1171027569" target="_blank" rel="noopener">SMA/SMK/Umum</a>
+        </div>
+      </div>
+
+      <a href="https://docs.google.com/spreadsheets/d/1UOj-hVnmCbxdBKmBIv4hEgsqbIDkuy19tqEGGWg2dTw/edit?gid=979970219#gid=979970219" target="_blank" rel="noopener">
+        <span>Bercerita Bahasa Inggris</span>
+        <span class="arrow">↗</span>
+      </a>
+
+      <div class="group">
+        <button type="button" class="toggle">
+          <span>Bercerita Bahasa Indonesia</span>
+          <span class="arrow">›</span>
+        </button>
+        <div class="submenu">
+          <a href="https://docs.google.com/spreadsheets/d/1rgjUr6zZ1HjX1BxhRPb8KTgqjXA3tqCSVl6JUyssE4k/edit?gid=623442731#gid=623442731" target="_blank" rel="noopener">SD</a>
+          <a href="https://docs.google.com/spreadsheets/d/1CXDd97uOtbT-rjTEFykmpoFT9fsZkQ8hg-qTbysVcIg/edit?gid=799795890#gid=799795890" target="_blank" rel="noopener">SMP</a>
+          <a href="https://docs.google.com/spreadsheets/d/1Ws0aUbDfhRnkom_eAMCTOxdUCluzz8blI9q1NNm79LE/edit?gid=1298705574#gid=1298705574" target="_blank" rel="noopener">SMA/SMK/Umum</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.querySelectorAll('.toggle').forEach((button) => {
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+
+        const group = button.closest('.group');
+        const parentMenu = group.parentElement;
+        const willOpen = !group.classList.contains('open');
+
+        Array.from(parentMenu.children).forEach((item) => {
+          if (item !== group && item.classList?.contains('group')) {
+            item.classList.remove('open');
+            item.querySelectorAll('.group.open').forEach((child) => {
+              child.classList.remove('open');
+            });
+          }
+        });
+
+        group.classList.toggle('open', willOpen);
+
+        if (!willOpen) {
+          group.querySelectorAll('.group.open').forEach((child) => {
+            child.classList.remove('open');
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
